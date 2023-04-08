@@ -21,9 +21,9 @@ const useStyles = makeStyles(theme => ({
     flexDirection: " column",
     alignItems: "center",
 
-    [theme.breakpoints.down("xs")]: {
-      backgroundColor: "purple"
-    },
+    // [theme.breakpoints.down("xs")]: {
+    //   backgroundColor: "purple"
+    // },
   },
   image: {
     width: "10rem",
