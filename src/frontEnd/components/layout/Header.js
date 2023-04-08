@@ -36,19 +36,6 @@ export const Header = () => {
                 </Typography>
               </Link>
             </Grid>
-            <Grid
-              item
-              sx={{
-                display: "flex",
-                alignItems: "center",
-              }}
-            >
-              <Link href="/events" style={{ textDecoration: "none" }}>
-                <Button variant="outlined" color="warning">
-                  <Typography variant="h5">All Events</Typography>
-                </Button>
-              </Link>
-            </Grid>
           </Grid>
         </Container>
       </AppBar>

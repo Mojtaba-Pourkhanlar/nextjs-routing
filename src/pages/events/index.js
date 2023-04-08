@@ -1,5 +1,6 @@
 import { HomePage } from "@frontEnd/container/HomePage";
 import Head from "next/head";
+import { ToastContainer } from "react-toastify";
 
 const AllEvents = () => {
   return (
@@ -16,6 +17,7 @@ const AllEvents = () => {
       </Head>
       <main>
         <HomePage />
+        <ToastContainer position="top-left" autoClose={3000} theme="dark" />
       </main>
     </>
   );

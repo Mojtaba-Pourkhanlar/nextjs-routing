@@ -48,17 +48,20 @@ const EventItem = (props) => {
           }}
         >
           <Box>
-            <Typography variant="h6" sx={{ fontWeight: 600, m: "25px 10px 10px" }}>
+            <Typography
+              variant="h6"
+              sx={{ fontWeight: 600, m: "25px 10px 10px" }}
+            >
               {title}
             </Typography>
             <CardContent sx={{ display: "flex" }}>
-              <span class="material-symbols-outlined">date_range</span>
+              <span className="material-symbols-outlined">date_range</span>
               <Typography variant="subtitle1" sx={{ mx: "10px" }}>
                 {humanReadableDate}
               </Typography>
             </CardContent>
             <CardContent sx={{ display: "flex" }}>
-              <span class="material-symbols-outlined">location_on</span>
+              <span className="material-symbols-outlined">location_on</span>
               <Typography variant="subtitle1" sx={{ mx: "10px" }}>
                 {formattedAddress}
               </Typography>
@@ -70,7 +73,7 @@ const EventItem = (props) => {
                 <Button
                   variant="contained"
                   endIcon={
-                    <span class="material-symbols-outlined">
+                    <span className="material-symbols-outlined">
                       arrow_right_alt
                     </span>
                   }
