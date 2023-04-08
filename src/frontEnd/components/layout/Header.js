@@ -43,9 +43,11 @@ export const Header = () => {
                 alignItems: "center",
               }}
             >
-              <Button variant="outlined" color="warning">
-                <Typography variant="h5">All Events</Typography>
-              </Button>
+              <Link href="/events" style={{ textDecoration: "none" }}>
+                <Button variant="outlined" color="warning">
+                  <Typography variant="h5">All Events</Typography>
+                </Button>
+              </Link>
             </Grid>
           </Grid>
         </Container>
