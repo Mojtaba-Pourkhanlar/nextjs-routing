@@ -7,8 +7,11 @@ import {
   CardMedia,
   Typography,
 } from "@mui/material";
+import dateSVG from "@frontEnd/assets/date.svg";
+import locationSVG from "@frontEnd/assets/location.svg";
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 const EventItem = (props) => {
   const { title, image, date, location, id } = props;
@@ -55,13 +58,13 @@ const EventItem = (props) => {
               {title}
             </Typography>
             <CardContent sx={{ display: "flex" }}>
-              <span className="material-symbols-outlined">date_range</span>
+              <Image src={dateSVG} alt="date" width={30} height={30} />
               <Typography variant="subtitle1" sx={{ mx: "10px" }}>
                 {humanReadableDate}
               </Typography>
             </CardContent>
             <CardContent sx={{ display: "flex" }}>
-              <span className="material-symbols-outlined">location_on</span>
+              <Image src={locationSVG} alt="date" width={30} height={30} />
               <Typography variant="subtitle1" sx={{ mx: "10px" }}>
                 {formattedAddress}
               </Typography>
