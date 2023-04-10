@@ -52,6 +52,23 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor: "#616161",
     },
   },
+  formBox: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "start",
+    flexDirection: "row",
+
+    // [theme.breakpoints.down("md")]: {
+    //   flexDirection: "column",
+    // },
+  },
+  formControl: {
+    minWidth: "300px",
+    margin: "0 20px",
+    // [theme.breakpoints.up("md")]: {
+    //   minWidth: "300px",
+    // },
+  },
 }));
 
 export default useStyles;
