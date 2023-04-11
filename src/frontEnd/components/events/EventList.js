@@ -1,7 +1,8 @@
 import React from "react";
-import EventItem from "./EventItem";
 import { Grid } from "@mui/material";
+
 import { DivLayout } from "@frontEnd/helpers";
+import EventItem from "./EventItem";
 
 export const EventList = ({ list }) => {
   return (

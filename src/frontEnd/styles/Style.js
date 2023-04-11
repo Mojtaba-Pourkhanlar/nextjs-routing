@@ -52,22 +52,19 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor: "#616161",
     },
   },
-  formBox: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "start",
-    flexDirection: "row",
-
-    // [theme.breakpoints.down("md")]: {
-    //   flexDirection: "column",
-    // },
+  eventTitleTypo: {
+    paddingTop: "6rem",
+    color: "white",
+    textAlign: "center",
+    textShadow: " 0 3px 10px rgba(0, 0, 0, 0.5)",
   },
-  formControl: {
-    minWidth: "300px",
-    margin: "0 20px",
-    // [theme.breakpoints.up("md")]: {
-    //   minWidth: "300px",
-    // },
+  cardContainer: {
+    boxShadow:
+      "0 1px 4px rgba(0, 0, 0, 0.3), 0 1px 12px 2px rgba(0, 0, 0, 0.2)",
+    borderRadius: "8px",
+    overflow: "hidden",
+    // backgroundColor: "#000",
+    margin: "1rem",
   },
 }));
 

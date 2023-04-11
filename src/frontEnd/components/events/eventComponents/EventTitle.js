@@ -7,15 +7,7 @@ export const EventTitle = (props) => {
   return (
     <Box className={classes.eventTitle}>
       <Container maxWidth="xl">
-        <Typography
-          variant="h3"
-          sx={{
-            pt: "6rem",
-            color: "white",
-            textAlign: "center",
-            textShadow: " 0 3px 10px rgba(0, 0, 0, 0.5)",
-          }}
-        >
+        <Typography variant="h3" className={classes.eventTitleTypo}>
           {props.title}
         </Typography>
       </Container>
