@@ -1,11 +1,15 @@
-import useStyles from "@frontEnd/styles/Style";
+import Link from "next/link";
+import Image from "next/image";
+
 import { Box, Grid, Typography } from "@mui/material";
+
 import dateSVG from "@frontEnd/assets/date.svg";
 import locationSVG from "@frontEnd/assets/location.svg";
 import descriptionSVG from "@frontEnd/assets/description.svg";
 import backSVG from "@frontEnd/assets/back.svg";
-import Image from "next/image";
-import Link from "next/link";
+
+import useStyles from "@frontEnd/styles/Style";
+
 
 export const EventLogistics = (props) => {
   const classes = useStyles();

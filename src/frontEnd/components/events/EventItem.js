@@ -1,17 +1,20 @@
+import Link from "next/link";
+import React from "react";
+import Image from "next/image";
+
 import {
   Box,
   Button,
   Card,
   CardContent,
-  CardHeader,
   CardMedia,
   Typography,
 } from "@mui/material";
+
 import dateSVG from "@frontEnd/assets/date.svg";
 import locationSVG from "@frontEnd/assets/location.svg";
-import Link from "next/link";
-import React from "react";
-import Image from "next/image";
+import nextSVG from "@frontEnd/assets/next.svg";
+
 
 const EventItem = (props) => {
   const { title, image, date, location, id } = props;
@@ -30,12 +33,11 @@ const EventItem = (props) => {
       "0 1px 4px rgba(0, 0, 0, 0.3), 0 1px 12px 2px rgba(0, 0, 0, 0.2)",
     borderRadius: "8px",
     overflow: "hidden",
-    backgroundColor: "white",
     margin: "1rem",
   };
 
   return (
-    <div style={cardContainer}>
+    <Box sx={cardContainer}>
       <Card sx={{ display: "block" }}>
         <CardMedia
           component="img"
@@ -48,6 +50,7 @@ const EventItem = (props) => {
             display: "flex",
             flexDirection: "column",
             justifyContent: "space-between",
+            backgroundColor: "#9e9e9e",
           }}
         >
           <Box>
@@ -76,9 +79,7 @@ const EventItem = (props) => {
                 <Button
                   variant="contained"
                   endIcon={
-                    <span className="material-symbols-outlined">
-                      arrow_right_alt
-                    </span>
+                    <Image src={nextSVG} alt="date" width={30} height={24} />
                   }
                 >
                   Explore Event
@@ -88,7 +89,7 @@ const EventItem = (props) => {
           </Box>
         </Box>
       </Card>
-    </div>
+    </Box>
   );
 };
 

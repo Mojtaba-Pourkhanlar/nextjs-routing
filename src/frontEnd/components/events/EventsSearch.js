@@ -1,18 +1,17 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import {
   Box,
   Button,
   FormControl,
-  Grid,
   InputLabel,
   MenuItem,
   Select,
 } from "@mui/material";
+
 import { DivLayout } from "@frontEnd/helpers";
-import useStyles from "@frontEnd/styles/Style";
+
 
 const EventsSearch = (props) => {
-  const classes = useStyles();
   const [year, setYear] = useState("");
   const [month, setMonth] = useState("");
   const handleChangeYear = (event) => {
@@ -25,14 +24,24 @@ const EventsSearch = (props) => {
     e.preventDefault();
     props.onSearch(year, month);
   };
+  const formBox = {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "start",
+    flexDirection: "row",
+    backgroundColor: "#9e9e9e",
+    height: "90px",
+    borderRadius: "8px",
+    m: "0 10px",
+  };
 
   return (
     <>
       <DivLayout>
         <form onSubmit={submitHandler} style={{ marginTop: "100px" }}>
-          <Box className={classes.formBox}>
+          <Box sx={formBox}>
             <Box>
-              <FormControl className={classes.formControl} size="small">
+              <FormControl sx={{ minWidth: "300px", m: "0 20px" }} size="small">
                 <InputLabel id="demo-select-small">Year</InputLabel>
                 <Select
                   labelId="demo-select-small"
@@ -49,7 +58,7 @@ const EventsSearch = (props) => {
                 </Select>
               </FormControl>
 
-              <FormControl className={classes.formControl} size="small">
+              <FormControl sx={{ minWidth: "300px", m: "0 20px" }} size="small">
                 <InputLabel id="demo-select-small">Month</InputLabel>
                 <Select
                   labelId="demo-select-small"
