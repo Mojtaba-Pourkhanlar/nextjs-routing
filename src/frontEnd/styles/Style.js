@@ -63,7 +63,6 @@ const useStyles = makeStyles((theme) => ({
       "0 1px 4px rgba(0, 0, 0, 0.3), 0 1px 12px 2px rgba(0, 0, 0, 0.2)",
     borderRadius: "8px",
     overflow: "hidden",
-    // backgroundColor: "#000",
     margin: "1rem",
   },
 }));
