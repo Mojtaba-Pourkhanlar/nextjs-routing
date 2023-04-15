@@ -9,6 +9,7 @@ const ResultsTitle = (props) => {
     month: "long",
     year: "numeric",
   });
+  
   return (
     <div>
       <h1>Events in {humanReadableDate}</h1>
